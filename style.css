@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(images/pokemon-ruby-version-wallpaper-thumb.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.select-starter{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 5rem;
+    color: yellow;
+	-webkit-text-stroke: 4px #00008B;
+}
+
+.img{
+    height: 250px;
+}
+
+
+.img:hover {
+    animation: shake 1s ease-in-out;
+    /* animation-iteration-count: infinite; */
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+  
+    20% {
+      transform: translateX(-10px);
+    }
+  
+    40% {
+      transform: translateX(10px);
+    }
+  
+    60% {
+      transform: translateX(-10px);
+    }
+  
+    80% {
+      transform: translateX(10px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+
+.poke{
+  height: 250px;
+  
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.poke-1{
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    justify-content: center;
+    margin: 5rem;
+    margin-top: 10rem;
+  }
+
+  .select-starter{
+    text-align: center;
+  }
+}
